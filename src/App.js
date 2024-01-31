@@ -8,6 +8,7 @@ function App() {
     <HashRouter>
       <header>
         <nav>
+            <Link to = "/"><img src = './img/cw-logo' alt = ''/></Link>
             <Link to = "/">HOME</Link>
             <Link to = "/projects">PROJECTS</Link>
             <Link to = "/contact">CONTACT</Link>

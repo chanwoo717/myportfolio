@@ -11,7 +11,7 @@ function Skills(props) {
                 </p>
             </div>
             <div className='skill-box'>
-                {/* each skill map 돌려 */}
+                {/* each skill map 돌려 with json*/}
                 <div className='each-skill'>
                     <div>
                         <img src = './' alt = '' />
