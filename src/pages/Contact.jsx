@@ -4,7 +4,7 @@ function Contact(props) {
     return (
         <div className='contact'>
             <img src = './' alt = '' />
-            <div>
+            <div className='contact-head'>
                 <h2>CONTACT</h2>
                 <p>some final text here...</p>
             </div>

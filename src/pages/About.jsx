@@ -2,9 +2,9 @@ import React from 'react';
 
 function About(props) {
     return (
-        <div className='about'>
+        <div className='about margin'>
             <h2>ABOUT</h2>
-            <div>
+            <div className='about-box'>
                 <div className='quote-box'>
                     <h4>Smooth Water Runs Deep</h4>
                     <p>
@@ -13,7 +13,7 @@ function About(props) {
                         계속 해서 나아갈 자신이 있습니다. 성실하게 쌓은 지식으로, 회사에 실질적인 도움이 되는 프론트엔드 개발자로 일하고 싶습니다.
                     </p>
                 </div>
-                <div>
+                <div className='edu-box'>
                     <h4>EDUCATION</h4>
                     <div className='table-box'>
                         <table>

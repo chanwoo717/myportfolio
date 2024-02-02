@@ -9,7 +9,7 @@ function Home(props) {
     return (
         <>
             <aside>
-                <Link to = "/home">MAIN</Link>
+                <Link to = "/">MAIN</Link>
                 <Link to = "/home">ABOUT</Link>
                 <Link to = "/home">SKILLS</Link>
                 <Link to = "/home">CONTACT</Link>

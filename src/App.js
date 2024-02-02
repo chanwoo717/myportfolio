@@ -2,13 +2,16 @@ import { HashRouter, Link, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Contact from './/pages/Contact';
+import './css/index.scss';
 
 function App() {
   return (
     <HashRouter>
       <header>
         <nav>
-            <Link to = "/"><img src = './img/cw-logo' alt = ''/></Link>
+          <div>
+            <Link to = "/" className='logo'><img src = './img/cw-logo.png' alt = ''/></Link>
+          </div>
             <Link to = "/">HOME</Link>
             <Link to = "/projects">PROJECTS</Link>
             <Link to = "/contact">CONTACT</Link>

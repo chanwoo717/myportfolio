@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
+
+body{
+    width: 100%;
+    background-color: black;
+    font-family: 'Titillium Web', sans-serif;
+    // font-family: 'Noto Sans KR', sans-serif;
+    h1{
+        color: white;
+        font-size: 100px;
+        font-weight: 100;
+    }
+    h2{}
+    h3{}
+    h4{}
+    p{
+        color: white;
+        font-size: 16px;
+    }
+    #root{
+        header{
+            width: 100%;
+            position: fixed;
+            z-index: 100;
+            nav{
+                width: 10%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-left: 70%;
+                >div{
+                    .logo{
+                        position: absolute;
+                        top: 30px;
+                        left: 50px;
+                        width: 5%;
+                        >img{
+                        }
+                    }
+                }
+                >a{
+                    margin: 20px;
+                    padding: 10px 20px;
+                    width: 100%;
+                    color: white;
+                    font-weight: 900;
+                }
+                >a:link{
+                    text-decoration: none;
+                }
+                >a:hover{
+                    background-color: white;
+                    color: black;
+                }
+            }
+        }
+        main{
+            aside{
+                // display: none;
+                >a{}
+            }
+            .main{
+                position: relative;
+                >img{
+                    width: 100%;  
+                }
+                .ii{
+                    width: 80%;
+                    .main-title{
+                        position: absolute;
+                        top: 10%;
+                        left: 800px;
+                        >h1{}
+                        >p{
+                            >b{}
+                        }
+                    }
+                }
+            }
+            .about{
+                >h2{}
+                .about-box{
+                    .quote-box{
+                        >h4{}
+                        >p{}
+                    }
+                    .edu-box{
+                        >h4{}
+                        .table-box{
+                            table{
+                                tr{
+                                    th{}
+                                    td:nth-child(1){}
+                                    td:nth-child(2){}
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .skills{
+                .skill-head{
+                    >h2{}
+                    >p{}
+                }
+                .skill-box{
+                    .each-skill{
+                        >div{
+                            >img{}
+                        }
+                        >div{
+                            >span{}
+                            >p{}
+                        }
+                    }
+                }
+            }
+            .contact{
+                >img{}
+                .contact-head{
+                    >h2{}
+                    >p{}
+                }
+                .contact-box{
+                    >figure{
+                        >img{}
+                        >figcaption{
+                            >p{}
+                        }
+                    }
+                }
+            }
+            .project{
+                >img{}
+                >h2{}
+                .mySwiper{
+                    .each-slide{
+                        >img{}
+                        >p{}
+                        .to-info-button{}
+                        .to-site-button{}
+                    }
+                }
+            }
+        }
+
+    }
+}
