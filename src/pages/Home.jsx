@@ -5,7 +5,7 @@ import About from './About';
 import Skills from './Skills';
 import Contact from './Contact';
 
-function Home(props) {
+function Home({data}) {
     return (
         <>
             <aside>
@@ -16,7 +16,7 @@ function Home(props) {
             </aside>
             <Main/>
             <About/>
-            <Skills/>
+            <Skills data = {data}/>
             <Contact/>
             
             
