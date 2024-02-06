@@ -6,6 +6,11 @@ import Skills from './Skills';
 import Contact from './Contact';
 
 function Home({data}) {
+    console.log(data);
+    const skills = data.skills;
+    const contact = data.contact;
+    console.log(contact);
+
     return (
         <>
             <aside>
@@ -16,8 +21,8 @@ function Home({data}) {
             </aside>
             <Main/>
             <About/>
-            <Skills data = {data}/>
-            <Contact/>
+            <Skills skills = {skills}/>
+            <Contact contact = {contact}/>
             
             
         </>

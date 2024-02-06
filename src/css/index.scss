@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
 @import url('reset.css');
 
+
+
 @mixin absolPos {
     left: 0;
     right: 0;
@@ -222,12 +224,8 @@ body {
                         margin: 20px;
 
                         .logo-box {
-                            width: 30%;
-                            padding: 15px 15px 10px 15px;
-                            background-color: #1B1B1B;
-                            border-radius: 7px;
-                            margin-bottom: 15px;
-
+                                width: 25%;
+                                margin-bottom: 15px;
                             >img {
                                 width: 100%;
                             }
@@ -278,10 +276,11 @@ body {
                             display: flex;
                             justify-content: space-between;
                             align-items: center;
+                            width: 100%;
 
                             >figure {
-                                width: 25%;
-                                margin: 80px;
+                                width: 20%;
+                                margin: 60px 40px;
                                 border-right: 1px solid $whiteOpac;
                                 display: flex;
                                 flex-direction: column;
@@ -289,9 +288,9 @@ body {
                                 align-items: center;
 
                                 >img {
-                                    width: 50%;
-                                    border-radius: 100%;
-                                    margin-bottom: 80px;
+                                    width: 60%;
+                                    // border-radius: 100%;
+                                    margin-bottom: 60px;
                                 }
 
                                 >figcaption {
@@ -324,6 +323,7 @@ body {
                         width: 60%;
 
                         .each-slide {
+                            height: 480px;
                             >img {
                                 width: 100%;
                                 border-radius: 20px;
@@ -378,47 +378,92 @@ body {
 
             .project-info {
                 width: 100%;
-                .banner {
-                    >img {
-                        //get from json and use as backgroundimg**same for the other background imgs
-                    }
-                }
+                position: relative;
                 .project-content{
-                    width: 80%;
+                    // width: 80%;
                     margin: 0 auto;
                     .project-title {
+                        .banner {
+                            >img{
+                                width: 100%;
+                                height: 350px;
+                                opacity: 0.6;
+                            }
+                            
+                        }
                         >h2 {}
-    
                         >p {}
                     }
-    
-                    .project-descript-1 {
-                        >h4 {}
-    
-                        >p {}
+                    .sect{
+                        width: 100%;
+                        // width: 80%;
+                        margin-bottom: 100px;
+                        // margin: 0 auto;
+                        .descript-center{
+                            margin: 0 auto;
+                            width: 60%;
+                        }
+                        .project-descript {
+                            >h4 {
+                                
+                            }
+                            
+                            >p {
+                            }
+                        }
+        
+                        .image-cluster {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 100%;
+                            margin: 0 auto;
+                            .couple-img{
+                                width: 45%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                margin: 100px 40px 40px 0;
+                                >img:nth-of-type(1) {
+                                    width: 50%;
+                                    margin-bottom: 40px;
+                                }
+            
+                                >img:nth-of-type(2) {
+                                    width: 50%;
+                                }
+                            }
+                            .solo-img{
+                                >img {
+                                    width: 100%;
+                                }
+                            }
+                        }
                     }
-    
-                    .image-cluster-1 {
-                        >img:nth-of-type(1) {}
-    
-                        >img:nth-of-type(2) {}
-    
-                        >img:nth-of-type(3) {}
+                    .btn{
+                        position: absolute;
+                        top: 99%;
+                        right: 10%;
+                        >a {
+                            color: white;
+                            background-color: $whiteOpac;
+                            border-radius: 5px;
+                            padding: 10px 20px;
+                            font-size: 1.5rem;
+                        }
+                        >a:hover{
+                            background-color: white;
+                            color: black;
+                        }
                     }
-    
-                    .project-descript-2 {}
-    
-                    .image-cluster-2 {}
-    
-                    .project-descript-3 {}
-    
-                    .image-cluster-3 {}
-    
-                    >a {
-                        background-color: $whiteOpac;
-                        border-radius: 5px;
-                        padding: 5px 20px;
-                        color: white;
+                    .sect:nth-of-type(2){
+                        .image-cluster{
+                            flex-direction: row-reverse;
+                            .couple-img{
+                                margin: 100px 0 40px 40px;
+                            }
+                        }
                     }
                 }
 

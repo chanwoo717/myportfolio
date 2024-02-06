@@ -1,152 +1,270 @@
 {
-    "skills" : [
+    "skills": [
         {
-            "id":1,
-            "img":"./img/icon/html-logo.png",
-            "name":"HTML",
-            "info":"상상한 무궁무진한 아이디어를 제가 배운 기술로 구현해가는 과정이 재밌습니다."
+            "id": 0,
+            "img": "./img/icon/html-logo.png",
+            "name": "HTML",
+            "info": "상상한 무궁무진한 아이디어를 제가 배운 기술로 구현해가는 과정이 재밌습니다."
         },
         {
-            "id":2,
-            "img":"./img/icon/css-logo.png",
-            "name":"CSS5",
-            "info":"상상한 무궁무진한 아이디어를 제가 배운 기술로 구현해가는 과정이 재밌습니다."
+            "id": 1,
+            "img": "./img/icon/css-logo.png",
+            "name": "CSS5",
+            "info": "상상한 무궁무진한 아이디어를 제가 배운 기술로 구현해가는 과정이 재밌습니다."
         },
         {
-            "id":3,
-            "img":"./img/icon/sass-logo.png",
-            "name":"SASS",
-            "info":"상상한 무궁무진한 아이디어를 제가 배운 기술로 구현해가는 과정이 재밌습니다."
+            "id": 2,
+            "img": "./img/icon/sass-logo.png",
+            "name": "SASS",
+            "info": "상상한 무궁무진한 아이디어를 제가 배운 기술로 구현해가는 과정이 재밌습니다."
         },
         {
-            "id":4,
-            "img":"./img/icon/js-logo.png",
-            "name":"JAVASCRIPT",
-            "info":"상상한 무궁무진한 아이디어를 제가 배운 기술로 구현해가는 과정이 재밌습니다."
+            "id": 3,
+            "img": "./img/icon/js-logo.png",
+            "name": "JAVASCRIPT",
+            "info": "상상한 무궁무진한 아이디어를 제가 배운 기술로 구현해가는 과정이 재밌습니다."
         },
         {
-            "id":5,
-            "img":"./img/icon/jquery-logo.png",
-            "name":"JQUERY",
-            "info":""
+            "id": 4,
+            "img": "./img/icon/jquery-logo.png",
+            "name": "JQUERY",
+            "info": ""
         },
         {
-            "id":6,
-            "img":"./img/icon/react-logo.png",
-            "name":"REACT.JS",
-            "info":""
+            "id": 5,
+            "img": "./img/icon/react-logo.png",
+            "name": "REACT.JS",
+            "info": ""
         },
         {
-            "id":7,
-            "img":"./img/icon/ts-logo.png",
-            "name":"TYPESCRIPT",
-            "info":""
+            "id": 6,
+            "img": "./img/icon/ts-logo.png",
+            "name": "TYPESCRIPT",
+            "info": ""
         },
         {
-            "id":8,
-            "img":"./img/icon/next-logo.png",
-            "name":"NEXT.JS",
-            "info":""
+            "id": 7,
+            "img": "./img/icon/next-logo.png",
+            "name": "NEXT.JS",
+            "info": ""
         },
         {
-            "id":9,
-            "img":"./img/icon/vue-logo.png",
-            "name":"VUE.JS",
-            "info":""
+            "id": 8,
+            "img": "./img/icon/vue-logo.png",
+            "name": "VUE.JS",
+            "info": ""
         },
         {
-            "id":10,
-            "img":"./img/icon/figma-logo.png",
-            "name":"FIGMA",
-            "info":""
+            "id": 9,
+            "img": "./img/icon/figma-logo.png",
+            "name": "FIGMA",
+            "info": ""
         },
         {
-            "id":11,
-            "img":"./img/icon/notion-logo.png",
-            "name":"NOTION",
-            "info":""
+            "id": 10,
+            "img": "./img/icon/notion-logo.png",
+            "name": "NOTION",
+            "info": ""
         },
         {
-            "id":12,
-            "img":"./img/icon/github-skill-logo.png",
-            "name":"GITHUB",
-            "info":""
+            "id": 11,
+            "img": "./img/icon/github-skill-logo.png",
+            "name": "GITHUB",
+            "info": ""
         }
     ],
-    "contact" : [
+    "contact": [
         {
-            "id":1,
-            "img":"./",
-            "details":""
+            "id": 0,
+            "img": "./img/ppTemp.png",
+            "detail1": "Chan Woo Kim",
+            "detail2": "1996/10/10"
         },
         {
-            "id":2,
-            "img":"./",
-            "details":""
+            "id": 1,
+            "img": "./img/mapss.png",
+            "detail1": "Seoul, Korea",
+            "detail2": "서울시 성동구"
         },
         {
-            "id":3,
-            "img":"./",
-            "details":""
+            "id": 2,
+            "img": "./img/icon/gmail-contact.png",
+            "detail1": "chanwoo555sonteen",
+            "detail2": "@gmail.com"
         },
         {
-            "id":4,
-            "img":"./",
-            "details":""
+            "id": 3,
+            "img": "./img/icon/github-contact.png",
+            "detail1": "chanwoo717.github.io",
+            "detail2": ""
         }
     ],
-    "projects" : [
+    "projects": [
         {
-            "id":1,
-            "img":"./",
-            "name":"",
-            "url":"./"
+            "id": 0,
+            "img": "./img/project1ex.jpg",
+            "name": "Titleman",
+            "url": "./"
         },
         {
-            "id":2,
-            "img":"./",
-            "name":"",
-            "url":"./"
+            "id": 1,
+            "img": "./img/spotlight-bg.jpg",
+            "name": "Projectman",
+            "url": "./"
         },
         {
-            "id":3,
-            "img":"./",
-            "name":"",
-            "url":"./"
+            "id": 2,
+            "img": "./img/project1ex.jpg",
+            "name": "Thisdaman",
+            "url": "./"
+        },
+        {
+            "id": 3,
+            "img": "./img/spotlight-bg.jpg",
+            "name": "Superman",
+            "url": "./"
         }
     ],
-    "each-content":[
-        {
-            "id":1,
-            "title":"",
-            "date":"",
-            "sub-title":"",
-            "content":["content"],
-            "img":[
-                "url1",
-                "url2",
-                "url3"
-            ]
-        },
-        {
-            "id":2,
-            "sub-title":"",
-            "content":["content"],
-            "img":[
-                "url1",
-                "url2",
-                "url3"
-            ]
-        },
-        {
-            "id":3,
-            "sub-title":"",
-            "content":["content"],
-            "img":[
-                "url1",
-                "url2",
-                "url3"
-            ]
-        }
-    ]
+    "eachContent": {
+        "Titleman": [
+            {
+                "id": 1,
+                "banner":"./img/project1ex.jpg",
+                "title": "Titleman",
+                "date": "12.22.2023",
+                "subTitle": "About Titleman",
+                "content": "제가 가장 좋아하는 영어 격언 입니다.거칠고 빠르게 지나가는 물보다 잔잔하게 오랫동안 깊이 있게 흐르는 물처럼 꾸준히 공부하고,계속 해서 나아갈 자신이 있습니다. 성실하게 쌓은 지식으로, 회사에 실질적인 도움이 되는 프론트엔드 개발자로 일하고 싶습니다.",
+                "img": [
+                    "./img/icon/gmail-contact.png",
+                    "./img/icon/css-logo.png",
+                    "./img/icon/html-logo.png"
+                ],
+                "url":"https://naver.com"
+            },
+            {
+                "id": 2,
+                "subTitle": "About Titleman",
+                "content": "제가 가장 좋아하는 영어 격언 입니다.거칠고 빠르게 지나가는 물보다 잔잔하게 오랫동안 깊이 있게 흐르는 물처럼 꾸준히 공부하고,계속 해서 나아갈 자신이 있습니다. 성실하게 쌓은 지식으로, 회사에 실질적인 도움이 되는 프론트엔드 개발자로 일하고 싶습니다.",
+                "img": [
+                    "./img/icon/gmail-contact.png",
+                    "./img/icon/css-logo.png",
+                    "./img/icon/gmail-contact.png"
+                ]
+            },
+            {
+                "id": 3,
+                "subTitle": "About Titleman",
+                "content": "제가 가장 좋아하는 영어 격언 입니다.거칠고 빠르게 지나가는 물보다 잔잔하게 오랫동안 깊이 있게 흐르는 물처럼 꾸준히 공부하고,계속 해서 나아갈 자신이 있습니다. 성실하게 쌓은 지식으로, 회사에 실질적인 도움이 되는 프론트엔드 개발자로 일하고 싶습니다.",
+                "img": [
+                    "./img/icon/css-logo.png",
+                    "./img/icon/gmail-contact.png"
+                ]
+            }
+        ],
+        "Projectman": [
+            {
+                "id": 1,
+                "banner":"./",
+                "title": "Projectman",
+                "date": "02.01.2024",
+                "subTitle": "About Titleman",
+                "content": "제가 가장 좋아하는 영어 격언 입니다.거칠고 빠르게 지나가는 물보다 잔잔하게 오랫동안 깊이 있게 흐르는 물처럼 꾸준히 공부하고,계속 해서 나아갈 자신이 있습니다. 성실하게 쌓은 지식으로, 회사에 실질적인 도움이 되는 프론트엔드 개발자로 일하고 싶습니다.",
+                "img": [
+                    "./img/icon/gmail-contact.png",
+                    "./img/icon/css-logo.png",
+                    "./img/icon/html-logo.png"
+                ],
+                "url":"https://naver.com"
+            },
+            {
+                "id": 2,
+                "subTitle": "About Titleman",
+                "content": "제가 가장 좋아하는 영어 격언 입니다.거칠고 빠르게 지나가는 물보다 잔잔하게 오랫동안 깊이 있게 흐르는 물처럼 꾸준히 공부하고,계속 해서 나아갈 자신이 있습니다. 성실하게 쌓은 지식으로, 회사에 실질적인 도움이 되는 프론트엔드 개발자로 일하고 싶습니다.",
+                "img": [
+                    "./img/icon/gmail-contact.png",
+                    "./img/icon/css-logo.png",
+                    "./img/icon/gmail-contact.png"
+                ]
+            },
+            {
+                "id": 3,
+                "subTitle": "About Titleman",
+                "content": "제가 가장 좋아하는 영어 격언 입니다.거칠고 빠르게 지나가는 물보다 잔잔하게 오랫동안 깊이 있게 흐르는 물처럼 꾸준히 공부하고,계속 해서 나아갈 자신이 있습니다. 성실하게 쌓은 지식으로, 회사에 실질적인 도움이 되는 프론트엔드 개발자로 일하고 싶습니다.",
+                "img": [
+                    "./img/icon/css-logo.png",
+                    "./img/icon/gmail-contact.png"
+                ]
+            }
+        ],
+        "Thisdaman": [
+            {
+                "id": 1,
+                "banner":"./",
+                "title": "Thisdaman",
+                "date": "03.02.2024",
+                "subTitle": "About Titleman",
+                "content": "제가 가장 좋아하는 영어 격언 입니다.거칠고 빠르게 지나가는 물보다 잔잔하게 오랫동안 깊이 있게 흐르는 물처럼 꾸준히 공부하고,계속 해서 나아갈 자신이 있습니다. 성실하게 쌓은 지식으로, 회사에 실질적인 도움이 되는 프론트엔드 개발자로 일하고 싶습니다.",
+                "img": [
+                    "./img/icon/gmail-contact.png",
+                    "./img/icon/css-logo.png",
+                    "./img/icon/html-logo.png"
+                ],
+                "url":"https://naver.com"
+            },
+            {
+                "id": 2,
+                "subTitle": "About Titleman",
+                "content": "제가 가장 좋아하는 영어 격언 입니다.거칠고 빠르게 지나가는 물보다 잔잔하게 오랫동안 깊이 있게 흐르는 물처럼 꾸준히 공부하고,계속 해서 나아갈 자신이 있습니다. 성실하게 쌓은 지식으로, 회사에 실질적인 도움이 되는 프론트엔드 개발자로 일하고 싶습니다.",
+                "img": [
+                    "./img/icon/gmail-contact.png",
+                    "./img/icon/css-logo.png",
+                    "./img/icon/gmail-contact.png"
+                ]
+            },
+            {
+                "id": 3,
+                "subTitle": "About Titleman",
+                "content": "제가 가장 좋아하는 영어 격언 입니다.거칠고 빠르게 지나가는 물보다 잔잔하게 오랫동안 깊이 있게 흐르는 물처럼 꾸준히 공부하고,계속 해서 나아갈 자신이 있습니다. 성실하게 쌓은 지식으로, 회사에 실질적인 도움이 되는 프론트엔드 개발자로 일하고 싶습니다.",
+                "img": [
+                    "./img/icon/css-logo.png",
+                    "./img/icon/gmail-contact.png"
+                ]
+            }
+        ],
+        "Superman": [
+            {
+                "id": 1,
+                "banner":"./",
+                "title": "Superman",
+                "date": "03.02.2024",
+                "subTitle": "About Titleman",
+                "content": "제가 가장 좋아하는 영어 격언 입니다.거칠고 빠르게 지나가는 물보다 잔잔하게 오랫동안 깊이 있게 흐르는 물처럼 꾸준히 공부하고,계속 해서 나아갈 자신이 있습니다. 성실하게 쌓은 지식으로, 회사에 실질적인 도움이 되는 프론트엔드 개발자로 일하고 싶습니다.",
+                "img": [
+                    "./img/icon/gmail-contact.png",
+                    "./img/icon/css-logo.png",
+                    "./img/icon/html-logo.png"
+                ],
+                "url":"https://naver.com"
+            },
+            {
+                "id": 2,
+                "subTitle": "About Titleman",
+                "content": "제가 가장 좋아하는 영어 격언 입니다.거칠고 빠르게 지나가는 물보다 잔잔하게 오랫동안 깊이 있게 흐르는 물처럼 꾸준히 공부하고,계속 해서 나아갈 자신이 있습니다. 성실하게 쌓은 지식으로, 회사에 실질적인 도움이 되는 프론트엔드 개발자로 일하고 싶습니다.",
+                "img": [
+                    "./img/icon/gmail-contact.png",
+                    "./img/icon/css-logo.png",
+                    "./img/icon/gmail-contact.png"
+                ]
+            },
+            {
+                "id": 3,
+                "subTitle": "About Titleman",
+                "content": "제가 가장 좋아하는 영어 격언 입니다.거칠고 빠르게 지나가는 물보다 잔잔하게 오랫동안 깊이 있게 흐르는 물처럼 꾸준히 공부하고,계속 해서 나아갈 자신이 있습니다. 성실하게 쌓은 지식으로, 회사에 실질적인 도움이 되는 프론트엔드 개발자로 일하고 싶습니다.",
+                "img": [
+                    "./img/icon/css-logo.png",
+                    "./img/icon/gmail-contact.png"
+                ]
+            }
+        ]
+    }
 }

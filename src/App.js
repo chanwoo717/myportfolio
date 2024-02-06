@@ -6,10 +6,12 @@ import Info from './pages/Info';
 import './css/index.scss';
 import json from './data.json';
 
+
 function App() {
 
   const data = json;
-  console.log(data);
+  const project = data.projects;
+  const eachProj = data.eachContent;
 
   return (
     <HashRouter>
@@ -26,9 +28,9 @@ function App() {
       <main>
         <Routes>
           <Route path = "/" element={<Home data = {data}/>}/>
-          <Route path = "/projects" element={<Projects data = {data}/>}/>
-          <Route path = "/contact" element={<Contact/>}/>
-          <Route path = "/projects/info" element = {<Info data = {data}/>}/>
+          <Route path = "/projects" element={<Projects project = {project}/>}/>
+          <Route path = "/contact" element={<Contact contact = {data.contact}/>}/>
+          <Route path = "/projects/info" element = {<Info data = {eachProj}/>}/>
         </Routes>
       </main>
     </HashRouter>

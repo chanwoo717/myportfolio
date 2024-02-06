@@ -1,6 +1,7 @@
 import React from 'react';
 
-function Contact({data}) {
+function Contact({contact}) {
+    console.log(contact);
     return (
         <div className='contact'>
             <img src = './img/spotlight-bg.jpg' alt = '' />
@@ -10,14 +11,16 @@ function Contact({data}) {
                     <p>some final text here...</p>
                 </div>
                 <div className='contact-box'>
-                    {/* map each contact */}
                     <div className='contact-flex'>
-                        <figure>
-                            <img src = './img/astronaut.jpg' alt = '' />
-                            <figcaption>
-                                <p>Chan Woo Kim <br/> 1996/10/10</p>
-                            </figcaption>
-                        </figure>
+                    {
+                        contact.map((obj)=>{
+                            return <figure key = {obj.id}>
+                                        <img src = {obj.img} alt = '' />
+                                        <figcaption>
+                                            <p>{obj.detail1} <br/> {obj.detail2}</p>
+                                        </figcaption>
+                                    </figure>
+                    })}
                     </div>
                 </div>
             </div>

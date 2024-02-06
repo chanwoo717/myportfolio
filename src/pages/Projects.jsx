@@ -9,10 +9,13 @@ import 'swiper/css/effect-fade';
 import { Link } from 'react-router-dom';
 
 
-function Projects(props) {
+
+function Projects({project}) {
+const [a,aa] = useState(0);
+
     return (
         <div className='project'>
-            <img src = './img/project1ex.jpg' alt = '' />
+            <img src = {project[a].img} alt = '' />
             <div className='project-main'>
                 <h2>Projects</h2>
                 <Swiper
@@ -25,26 +28,23 @@ function Projects(props) {
                     }}
                     navigation={true}
                     modules={[EffectFade, Pagination, Navigation]}
+                    onSlideChange={(e) => 
+                        aa(e.realIndex)
+                    }
                     className="mySwiper"
                 >
-                    <SwiperSlide>
+                    {project.map((obj)=>{
+                    return <SwiperSlide key = {obj.id}>
                         <div className='each-slide'>
-                            <img src = './img/project1ex.jpg' alt = '' />
-                            <p>TITLEMAN</p>
+                            <img src = {obj.img} alt = '' />
+                            <p>{obj.name}</p>
                             <div className="project-button">
-                                <Link to = "/projects/info" className='to-info-button'>Project Info</Link>
-                                <Link to = "https://naver.com" className='to-site-button'>Go To Website</Link>
+                                <Link to = "/projects/info" state={obj.name} className='to-info-button'>Project Info</Link>
+                                <Link to = {obj.url} className='to-site-button'>Go To Website</Link>
                             </div>
                         </div>
                     </SwiperSlide>
-                    <SwiperSlide>Slide 2</SwiperSlide>
-                    <SwiperSlide>Slide 3</SwiperSlide>
-                    <SwiperSlide>Slide 4</SwiperSlide>
-                    <SwiperSlide>Slide 5</SwiperSlide>
-                    <SwiperSlide>Slide 6</SwiperSlide>
-                    <SwiperSlide>Slide 7</SwiperSlide>
-                    <SwiperSlide>Slide 8</SwiperSlide>
-                    <SwiperSlide>Slide 9</SwiperSlide>
+                    })}
                 </Swiper>
             </div>
         </div>
