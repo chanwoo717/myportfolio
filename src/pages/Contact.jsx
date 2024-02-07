@@ -1,7 +1,6 @@
 import React from 'react';
 
 function Contact({contact}) {
-    console.log(contact);
     return (
         <div className='contact'>
             <img src = './img/spotlight-bg.jpg' alt = '' />

@@ -6,10 +6,8 @@ import Skills from './Skills';
 import Contact from './Contact';
 
 function Home({data}) {
-    console.log(data);
     const skills = data.skills;
     const contact = data.contact;
-    console.log(contact);
 
     return (
         <>

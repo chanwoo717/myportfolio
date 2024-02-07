@@ -11,6 +11,7 @@
     margin-right: auto;
 }
 
+$koreanText : 'Noto Sans KR' , sans-serif;
 $whiteOpac: rgba(255, 255, 255, 0.2);
 
 
@@ -18,14 +19,36 @@ body {
     width: 100%;
     background-color: black;
     font-family: 'Titillium Web', sans-serif;
-
     // font-family: 'Noto Sans KR', sans-serif;
+
     h1 {
-        color: white;
         font-size: 6.25rem;
         font-weight: 100;
-    }
+        position: relative;
+        color: hsl(0, 0%, 68%);
+        overflow: hidden;
+        border-right: 2px solid hsl(0, 0%, 80%);
+        white-space: nowrap;
+        animation: typewriter 2s steps(18) 1s 1 normal both,
+        blinkTextCursor 800ms infinite;
 
+    }
+    @keyframes typewriter {
+        from {
+            width: 0;
+        }
+        to {
+            width: 950px;
+        }
+    }
+    @keyframes blinkTextCursor {
+        from {
+            border-right-color: hsl(0, 0%, 80%);
+        }
+        to {
+            border-right-color: transparent;
+        }
+    }
     h2 {
         color: white;
         font-size: 3.75rem;
@@ -121,6 +144,7 @@ body {
                     width: 80%;
 
                     .main-title {
+                        width: 100%;
                         position: absolute;
                         top: 25%;
                         @include absolPos;
@@ -129,9 +153,12 @@ body {
                         flex-direction: column;
                         align-items: center;
 
-                        >h1 {}
+                        >h1 {
+                            margin-bottom: 50px;
+                        }
 
-                        >p {
+                        >div {
+                            font-family: $koreanText;
                             width: 15%;
                             text-align: center;
                             background-color: white;
@@ -142,7 +169,10 @@ body {
                             opacity: 0.9;
                             margin: 30px;
 
-                            >b {}
+                            .adj-ani {
+                                transition: smooth;
+                            }
+                            >p{}
                         }
                     }
                 }
@@ -160,7 +190,9 @@ body {
                     .quote-box {
                         >h4 {}
 
-                        >p {}
+                        >p {
+                            font-family: $koreanText;
+                        }
                     }
 
                     .edu-box {
@@ -206,7 +238,9 @@ body {
                 .skill-head {
                     >h2 {}
 
-                    >p {}
+                    >p {
+                        font-family: $koreanText;
+                    }
                 }
 
                 .skill-box {
@@ -242,6 +276,7 @@ body {
 
                             >p {
                                 text-align: left;
+                                font-family: $koreanText;
                             }
                         }
                     }
@@ -277,25 +312,30 @@ body {
                             justify-content: space-between;
                             align-items: center;
                             width: 100%;
-
+                            
                             >figure {
-                                width: 20%;
-                                margin: 60px 40px;
-                                border-right: 1px solid $whiteOpac;
+                                width: 25%;
+                                margin: 100px 0;
                                 display: flex;
                                 flex-direction: column;
                                 justify-content: center;
                                 align-items: center;
-
+                                border-right: 1px solid $whiteOpac;
+                                
                                 >img {
                                     width: 60%;
-                                    // border-radius: 100%;
                                     margin-bottom: 60px;
                                 }
 
                                 >figcaption {
-                                    >p {}
+                                    >p {
+                                        padding-bottom: 20px;
+                                        text-align: left;
+                                    }
                                 }
+                            }
+                            >figure:nth-of-type(4){
+                                border: none;
                             }
                         }
                     }
@@ -379,6 +419,11 @@ body {
             .project-info {
                 width: 100%;
                 position: relative;
+                // .scroll{
+                //     color: red;
+                //     width: 100%;
+                //     height: 500px;
+                // }
                 .project-content{
                     // width: 80%;
                     margin: 0 auto;

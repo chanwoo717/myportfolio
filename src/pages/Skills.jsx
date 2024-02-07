@@ -1,7 +1,6 @@
 import React from 'react';
 
 function Skills({ skills }) {
-console.log(skills);
 
     return (
         <div className='skills section'>

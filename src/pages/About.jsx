@@ -6,7 +6,8 @@ function About(props) {
             <h2>ABOUT</h2>
             <div className='about-box'>
                 <div className='quote-box'>
-                    <h4>Smooth Water Runs Deep</h4>
+                    <h4>Failure is simply the opportunity to begin again, this time more intelligently..</h4>
+                    {/* A thinker sees his own actions as experiments and questions – as attempts to find out something. Success and failure are for him answers above all. – Friedrich Nietzsche */}
                     <p>
                         제가 가장 좋아하는 영어 격언 입니다.<br/>
                         거칠고 빠르게 지나가는 물보다 잔잔하게 오랫동안 깊이 있게 흐르는 물처럼 꾸준히 공부하고, 
