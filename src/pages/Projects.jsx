@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectFade, Pagination, Navigation } from 'swiper/modules';
 
@@ -11,11 +11,11 @@ import { Link } from 'react-router-dom';
 
 
 function Projects({project}) {
-const [a,aa] = useState(0);
+const [projIdx,setprojIdx] = useState(0);
 
     return (
         <div className='project'>
-            <img src = {project[a].img} alt = '' />
+            <img src = {project[projIdx].img} alt = '' />
             <div className='project-main'>
                 <h2>Projects</h2>
                 <Swiper
@@ -29,7 +29,7 @@ const [a,aa] = useState(0);
                     navigation={true}
                     modules={[EffectFade, Pagination, Navigation]}
                     onSlideChange={(e) => 
-                        aa(e.realIndex)
+                        setprojIdx(e.realIndex)
                     }
                     className="mySwiper"
                 >

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { motion, useMotionValue, useMotionValueEvent, useScroll } from "framer-motion"
+import { /*motion, useMotionValue,*/ useMotionValueEvent, useScroll } from "framer-motion"
 
-function Info({data}) {
+function Info({eachProj}) {
     const { scrollY } = useScroll()
 
     // const x = useMotionValue(0)
@@ -10,8 +10,8 @@ useMotionValueEvent(scrollY, "change", (latest) => {
   console.log("Page scroll: ", latest)
 })
     const {state} = useLocation();
-    const eachProject = data[state];
-        
+    const eachProject = eachProj[state];
+        console.log(eachProject);
         return (
             <div className='project-info'>
                         {

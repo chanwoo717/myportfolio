@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import TextTransition, { presets } from 'react-text-transition';
+
 const names = [
     '열정적인', '협업적인', '개성있는', 'DogFeet'
 ]
-const TEXTS = ['Forest', 'Building', 'Tree', 'Color'];
+
+// const TEXTS = ['Forest', 'Building', 'Tree', 'Color'];
+
 function Main() {
     // const [newName, setNewName] = useState("");
 
@@ -23,10 +26,12 @@ function Main() {
     useEffect(() => {
         const intervalId = setInterval(
             () => setIndex((index) => index + 1),
-            3000, // every 3 seconds
-        );
+            3000);
+            // if(index === 4){
+            //     return names[0]
+            // }
         return () => clearTimeout(intervalId);
-    }, []);
+    }, [index]);
 
     return (
 
@@ -44,7 +49,7 @@ function Main() {
                     >
                         {names[index]}
                     </TextTransition>
-                        <p>개발자 김찬우</p>
+                        <p>웹 개발자 김찬우</p>
                     </div>
                 </div>
             </div>

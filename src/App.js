@@ -30,7 +30,7 @@ function App() {
           <Route path = "/" element={<Home data = {data}/>}/>
           <Route path = "/projects" element={<Projects project = {project}/>}/>
           <Route path = "/contact" element={<Contact contact = {data.contact}/>}/>
-          <Route path = "/projects/info" element = {<Info data = {eachProj}/>}/>
+          <Route path = "/projects/info" element = {<Info eachProj = {eachProj}/>}/>
         </Routes>
       </main>
     </HashRouter>

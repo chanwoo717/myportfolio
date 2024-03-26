@@ -7,6 +7,7 @@ import Contact from './Contact';
 
 function Home({data}) {
     const skills = data.skills;
+    const skillsTwo = data.skillsTwo;
     const contact = data.contact;
 
     return (
@@ -19,7 +20,7 @@ function Home({data}) {
             </aside>
             <Main/>
             <About/>
-            <Skills skills = {skills}/>
+            <Skills skills = {skills} skillsTwo = {skillsTwo}/>
             <Contact contact = {contact}/>
             
             
