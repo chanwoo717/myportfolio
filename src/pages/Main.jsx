@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import TextTransition, { presets } from 'react-text-transition';
 
 const names = [
-    '열정적인', '협업적인', '개성있는', 'DogFeet'
+    '열정적인', '협업적인', '창의적인', '효율적인'
 ]
 
 function Main({scrollTo,goToSectionRef}) {
