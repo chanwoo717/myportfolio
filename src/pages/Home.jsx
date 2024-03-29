@@ -1,29 +1,26 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
+import React, { useRef } from 'react';
 import Main from './Main';
 import About from './About';
 import Skills from './Skills';
 import Contact from './Contact';
 
-function Home({data}) {
+function Home({ data }) {
     const skills = data.skills;
-    const skillsTwo = data.skillsTwo;
     const contact = data.contact;
+    const section1 = useRef();
+
+    function scrollTo(section) {
+        section.current.scrollIntoView({ behavior: "smooth" });
+    }
 
     return (
         <>
-            <aside>
-                <Link to = "/">MAIN</Link>
-                <Link to = "/home">ABOUT</Link>
-                <Link to = "/home">SKILLS</Link>
-                <Link to = "/home">CONTACT</Link>
-            </aside>
-            <Main/>
-            <About/>
-            <Skills skills = {skills} skillsTwo = {skillsTwo}/>
-            <Contact contact = {contact}/>
-            
-            
+            <Main scrollTo={scrollTo} goToSectionRef={section1}/>
+            <div ref={section1}>
+                <About/>
+            </div>
+            <Skills skills={skills}/>
+            <Contact contact={contact} />
         </>
     );
 }

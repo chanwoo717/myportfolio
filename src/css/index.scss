@@ -1,25 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
 @import url('reset.css');
+@import './mixin';
 
-
-
-@mixin absolPos {
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-$koreanText : 'Noto Sans KR' , sans-serif;
+$koreanText : 'Noto Sans KR', sans-serif;
 $whiteOpac: rgba(255, 255, 255, 0.2);
-
 
 body {
     width: 100%;
     background-color: black;
     font-family: 'Titillium Web', sans-serif;
-    // font-family: 'Noto Sans KR', sans-serif;
+    
+    @keyframes typewriter {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 950px;
+        }
+    }
+
+    @keyframes blinkTextCursor {
+        from {
+            border-right-color: hsl(0, 0%, 80%);
+        }
+
+        to {
+            border-right-color: transparent;
+        }
+    }
 
     h1 {
         font-size: 6.25rem;
@@ -30,25 +40,32 @@ body {
         border-right: 2px solid hsl(0, 0%, 80%);
         white-space: nowrap;
         animation: typewriter 2s steps(18) 1s 1 normal both,
-        blinkTextCursor 800ms infinite;
+            blinkTextCursor 800ms infinite;
+        @include oneK {
+            font-size: 3.25rem;
+            @keyframes typewriter {
+                from {
+                    width: 0;
+                }
+                to {
+                    width: 500px;
+                }
+            }
+        }
+        @include mobile{
+            font-size: 1.8rem;
+            @keyframes typewriter {
+                from {
+                    width: 0;
+                }
+                to {
+                    width: 280px;
+                }
+            }
+        }
+    }
 
-    }
-    @keyframes typewriter {
-        from {
-            width: 0;
-        }
-        to {
-            width: 950px;
-        }
-    }
-    @keyframes blinkTextCursor {
-        from {
-            border-right-color: hsl(0, 0%, 80%);
-        }
-        to {
-            border-right-color: transparent;
-        }
-    }
+
     h2 {
         color: white;
         font-size: 3.75rem;
@@ -56,18 +73,28 @@ body {
         text-decoration: line-through;
         text-decoration-thickness: 1px;
         text-align: center;
-        margin: 150px 0 70px 0;
+        margin: 150px auto 70px;
+        @include oneK{
+            font-size: 2.5rem;
+            margin: 100px auto 50px;
+        }
+        @include mobile{
+            font-size: 2rem;
+        }
+
     }
-
-    h3 {}
-
     h4 {
         color: white;
         font-size: 1.25rem;
         font-style: italic;
         font-weight: 400;
         text-align: center;
-        margin: 100px 0 30px 0;
+        @include oneK{
+            font-size: 1rem;
+        }
+        @include mobile{
+            font-size: 0.8rem;
+        }
     }
 
     p {
@@ -76,25 +103,41 @@ body {
         text-align: center;
         font-weight: 300;
         opacity: 0.7;
+        
+        @include mobile{
+            font-size: 0.8rem;
+        }
     }
 
     .section {
         width: 80%;
         margin: 0 auto;
+        @include oneK {
+            width: 90%;
+        }
+
     }
 
     #root {
         header {
             width: 100%;
             position: fixed;
-            z-index: 100;
+            z-index: 2;
 
             nav {
                 width: 10%;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                margin-left: 70%;
+                margin-left: 65%;
+                @include oneK{
+                    margin-left: 50%;
+                    width: 20%;
+                }
+                @include mobile{
+                    margin-left: 23%;
+                    margin-right: 23%;
+                }
 
                 >div {
                     .logo {
@@ -102,8 +145,18 @@ body {
                         top: 30px;
                         left: 50px;
                         width: 5%;
-
-                        >img {}
+                        @include oneK{
+                            >img{
+                                width: 80px;
+                            }
+                        }
+                        @include mobile{
+                            >img{
+                                width: 60px;
+                            }
+                            top: 10px;
+                            left: 15px;
+                        }
                     }
                 }
 
@@ -113,6 +166,12 @@ body {
                     width: 100%;
                     color: white;
                     font-weight: 500;
+                    @include oneK{
+                        padding: 5px;
+                    }
+                    @include mobile {
+                        margin: 10px;
+                    }
                 }
 
                 >a:link {
@@ -123,22 +182,46 @@ body {
                     background-color: white;
                     color: black;
                     border-radius: 5px;
+                    
                 }
             }
         }
 
         main {
-            aside {
+            width: 100%;
+            position: relative;
 
-                // display: none;
-                >a {}
+            .downarrow {
+                >img{
+
+                    position: absolute;
+                    bottom: 50px;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    width: 80px;
+                    height: 80px;
+                    z-index: 2;
+                    @include oneK{
+                        width: 50px;
+                        height: 50px;
+                    }
+                    @include mobile{
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+
             }
-
             .main {
                 position: relative;
 
                 >img {
                     width: 100%;
+                    height: 100vh;
+                    @include mobile{
+                        height: 60vh;
+                    }
                 }
 
                 .margin {
@@ -153,6 +236,9 @@ body {
                         justify-content: center;
                         flex-direction: column;
                         align-items: center;
+                        @include oneK{
+                            top: 35%;
+                        }
 
                         >h1 {
                             margin-bottom: 50px;
@@ -160,24 +246,39 @@ body {
 
                         >div {
                             font-family: $koreanText;
-                            width: 15%;
+                            width: 220px;
                             text-align: center;
-                            background-color: white;
-                            border-radius: 50px;
-                            padding: 15px 30px;
-                            color: black;
+                            border-radius: 60px;
+                            padding: 15px 20px;
+                            color: white;
                             font-size: 1.25rem;
-                            opacity: 0.9;
+                            opacity: 0.8;
                             margin: 30px;
+                            @include oneK {
+                                width: 130px;
+                                font-size: 1rem;
+                                margin: 0;
+                                padding: 10px 0;
+                            }
+                            @include mobile{
+                                font-size: 0.8rem;
+                            }
 
                             .adj-ani {
                                 transition: smooth;
                             }
-                            >p{
-                                color: black;
+
+                            >p {
+                                color: white;
                                 opacity: 1;
                                 font-weight: 500;
                                 font-size: 1.25rem;
+                                @include oneK {
+                                    font-size: 1rem;
+                                }
+                                @include mobile{
+                                    font-size: 0.8rem;
+                                }
                             }
                         }
                     }
@@ -185,47 +286,69 @@ body {
             }
 
             .about {
-
-                >h2 {}
-
                 .about-box {
                     width: 100%;
                     border: 1px solid $whiteOpac;
                     border-radius: 30px;
+                    @include oneK{
+                        padding: 30px;
+                    }
 
                     .quote-box {
-                        >h4 {}
+                        >h4 {
+                            margin: 100px auto 50px;
+                            width: 60%;
+                            @include oneK{
+                                margin: 30px auto 40px;
+                            }
+                        }
 
                         >p {
                             font-family: $koreanText;
+                            width: 70%;
+                            margin: 0 auto;
                         }
                     }
 
                     .edu-box {
                         color: white;
 
-                        >h4 {}
+                        >h4 {
+
+                            margin: 100px auto 50px;
+                            @include mobile{
+                                margin: 50px auto 30px;
+                            }
+                        }
 
                         .table-box {
                             table {
                                 width: 80%;
                                 margin: 0 auto 100px;
                                 border-collapse: collapse;
-                                tbody{
+                                @include mobile {
+                                    font-size: 0.8rem;
+                                }
+                                tbody {
+
                                     tr,
                                     th,
                                     td {
                                         border: 1px solid $whiteOpac;
-    
+
                                         th {
                                             border-left: hidden;
+                                            font-weight: 100;
                                         }
-    
+
                                         td:nth-of-type(1) {
                                             padding: 20px 80px;
                                             opacity: 0.7;
+                                            @include pad {
+                                                padding: 15px 20px;
+                                            }
                                         }
-    
+
                                         td:nth-of-type(2) {
                                             text-align: center;
                                             border-right: hidden;
@@ -242,8 +365,6 @@ body {
 
             .skills {
                 .skill-head {
-                    >h2 {}
-
                     >p {
                         font-family: $koreanText;
                     }
@@ -254,18 +375,30 @@ body {
                     border-radius: 30px;
                     display: flex;
                     justify-content: space-between;
-                    align-items: center;
+                    align-items: start;
                     flex-wrap: wrap;
                     padding: 100px 150px;
-                    margin: 30px auto 250px;
+                    margin: 30px auto 150px;
+                    @include oneK {
+                        padding: 20px;
+                        justify-content: space-evenly;
+                    }
 
                     .each-skill {
                         width: 20%;
                         margin: 20px;
+                        @include oneK {
+                            width: 27%;
+                        }
+                        @include mobile{
+                            width: 30%;
+                            margin: 10px auto;
+                        }
 
                         .logo-box {
-                                width: 25%;
-                                margin-bottom: 15px;
+                            width: 25%;
+                            margin-bottom: 15px;
+
                             >img {
                                 width: 100%;
                             }
@@ -278,6 +411,9 @@ body {
                                 font-size: 1.25rem;
                                 font-weight: 700;
                                 color: white;
+                                @include mobile {
+                                    font-size: 0.9rem;
+                                }
                             }
 
                             >p {
@@ -294,7 +430,8 @@ body {
 
                 >img {
                     width: 100%;
-                    // outline: none;
+                    opacity: 0.7;
+                    height: 100vh;
                 }
 
                 .contact-content {
@@ -303,9 +440,9 @@ body {
                     @include absolPos;
 
                     .contact-head {
-                        >h2 {}
-
-                        >p {}
+                        >h2 {
+                            margin-top: 80px;
+                        }
                     }
 
                     .contact-box {
@@ -318,32 +455,82 @@ body {
                             justify-content: space-between;
                             align-items: center;
                             width: 100%;
-                            
+                            @include mobile {
+                                flex-direction: column;
+                            }
+
                             >figure {
                                 width: 25%;
-                                margin: 100px 0;
+                                margin: 80px auto;
                                 display: flex;
                                 flex-direction: column;
                                 justify-content: center;
                                 align-items: center;
                                 border-right: 1px solid $whiteOpac;
-                                
-                                >img {
-                                    width: 60%;
-                                    margin-bottom: 60px;
+                                @include oneK{
+                                    width: 20%;
+                                    border-right: none;
+                                    margin: 60px auto;
+                                }
+                                @include mobile{
+                                    width: 35%;
+                                    margin: 30px auto;
+                                    border-bottom: 1px solid $whiteOpac;
+                                    padding-bottom: 30px;
+                                    
+                                }
+                                >a{
+                                    display: flex;
+                                    >img {
+                                        margin: 0 auto 60px;
+                                        width: 100%;
+                                        @include oneK{
+                                            width: 80%;
+                                            margin: 0 auto;
+                                        }
+                                    }
                                 }
 
                                 >figcaption {
                                     >p {
-                                        padding-bottom: 20px;
+                                        padding: 20px 0;
                                         text-align: left;
                                     }
                                 }
                             }
-                            >figure:nth-of-type(4){
+
+                            >figure:nth-of-type(4) {
                                 border: none;
                             }
                         }
+                    }
+                }
+
+                .toProjectPage {
+                    >a {
+                        width: 200px;
+                        position: absolute;
+                        bottom: 50px;
+                        left: 0;
+                        right: 0;
+                        margin: 0 auto;
+                        background-color: $whiteOpac;
+                        border-radius: 5px;
+                        padding: 5px 20px;
+                        color: white;
+                        font-size: 1.25rem;
+                        text-align: center;
+                        @include oneK {
+                            bottom: 100px;
+                        }
+                        @include mobile {
+                            display:none;
+                        }
+                    }
+
+                    >a:hover {
+                        background-color: white;
+                        color: black;
                     }
                 }
             }
@@ -351,168 +538,216 @@ body {
             .project {
                 width: 100%;
 
-                >img {
-                    position: relative;
-                    width: 100%;
-                    opacity: 0.3;
-                }
-
                 .project-main {
-                    width: 80%;
+                    width: 100%;
                     position: absolute;
                     top: 0;
                     @include absolPos;
 
-                    >h2 {}
-                    
                     .mySwiper {
-                        width: 60%;
-
+                        width: 100%;
+                        height: 100vh;
+                        .swiper-button-prev{
+                            color: white;
+                            margin: auto 20px;
+                        }
+                        .swiper-button-next{
+                            color: white;
+                            margin: auto 20px;
+                        }
                         .each-slide {
-                            height: 480px;
                             >img {
                                 width: 100%;
-                                border-radius: 20px;
-                                margin-bottom: 20px;
+                                height: 100vh;
+                                @include mobile{
+                                    width: 1920px;
+                                    align-content: center;
+                                }
                             }
 
                             >p {
+                                font-family: 'Titillium Web', sans-serif;
                                 position: absolute;
-                                top: 10%;
-                                @include absolPos;
+                                top: 41%;
+                                left: 0;
+                                right: 0;
+                                color: white;
+                                font-weight: 700;
                                 opacity: 1;
-                                font-size: 2rem;
+                                text-align: center;
+                                font-size: 6rem;
+                                @include pad{
+                                    top: 27%;
+                                }
+                                @include mobile{
+                                    top: 30%;
+                                    font-size: 3.5rem;
+                                }
+
                             }
 
                             .project-button {
                                 position: absolute;
                                 display: flex;
+                                flex-direction: column;
                                 justify-content: center;
                                 align-items: center;
-                                top: 70%;
+                                top: 60%;
                                 @include absolPos;
                                 font-size: 1.5rem;
 
-                                >a {
-                                    background-color: $whiteOpac;
-                                    border-radius: 5px;
-                                    padding: 5px 20px;
-                                }
-
-                                >a:hover {
-                                    background-color: white;
-                                    color: black;
-                                }
-
                                 .to-info-button {
+                                    font-weight: 600;
                                     color: white;
-                                    margin-right: 60px;
-                                }
 
-                                .to-site-button {
-                                    color: white;
+                                    >img {
+                                        width: 35px;
+                                        height: 17px;
+                                    }
+                                }
+                            }
+
+                            .length {
+                                position: absolute;
+                                bottom: 50px;
+                                left: 10%;
+                                font-size: 6rem;
+                                font-weight: 700;
+                                color: white;
+                                @include mobile{
+                                    font-size: 3.5rem;
+                                    bottom: 100px;
+                                    left: 40%;
                                 }
                             }
                         }
+                        .swiper-pagination-bullet-active {
+                            background: aliceblue;
 
-                        .swiper-pagination-bullets {
-                            margin: 20px;
                         }
                     }
+
                 }
             }
 
             .project-info {
                 width: 100%;
                 position: relative;
-                // .scroll{
-                //     color: red;
-                //     width: 100%;
-                //     height: 500px;
-                // }
-                .project-content{
-                    // width: 80%;
+
+                .project-content {
+
                     margin: 0 auto;
+                    position: relative;
+
                     .project-title {
                         .banner {
-                            >img{
+                            height: 400px;
+                            overflow: hidden;
+                            @include pad{
+                                height: 250px;
+                            }
+                            @include mobile{
+                                height: 200px;
+                            }
+
+                            >img {
                                 width: 100%;
-                                height: 350px;
-                                opacity: 0.6;
+                                opacity: 0.7;
                             }
-                            
+
                         }
-                        >h2 {}
-                        >p {}
+
+                        >h2 {
+                            @include pad{
+                                margin-top: 10px;
+                            }
+                        }
+                        >h4{
+                            @include pad {
+                                width: 80%;
+                                margin: 0 auto;
+                            }
+                        }
                     }
-                    .sect{
+
+                    .sect {
                         width: 100%;
-                        // width: 80%;
                         margin-bottom: 100px;
-                        // margin: 0 auto;
-                        .descript-center{
-                            margin: 0 auto;
-                            width: 60%;
+
+                        .descript-center {
+                            margin: 100px auto;
+                            width: 40%;
+                            @include oneK{
+                                width: 60%;
+                                margin: 40px auto;
+                            }
                         }
+
                         .project-descript {
-                            >h4 {
-                                
-                            }
+
+                                .info-title {
+                                    margin-bottom: 30px;
+                                }
+
+                                >p {
+                                    word-break: keep-all;
+                                    text-indent: 20px;
+                                    padding: 10px;
+                                }
+                                .gitty{
+                                    border: 1px solid rgba(255, 255, 255, 0.2);
+                                    width: 180px;
+                                    border-radius: 5px;
+                                    margin: 0 auto;
+                                    @include mobile{
+                                        width: 130px;
+                                        >img{
+                                            width: 30px;
+                                        }
+                                    }
+                                }
                             
-                            >p {
-                            }
+
                         }
-        
+
                         .image-cluster {
                             display: flex;
+                            flex-direction: column;
                             justify-content: center;
                             align-items: center;
                             width: 100%;
                             margin: 0 auto;
-                            .couple-img{
-                                width: 45%;
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: center;
-                                align-items: center;
-                                margin: 100px 40px 40px 0;
-                                >img:nth-of-type(1) {
-                                    width: 50%;
-                                    margin-bottom: 40px;
-                                }
-            
-                                >img:nth-of-type(2) {
-                                    width: 50%;
-                                }
-                            }
-                            .solo-img{
-                                >img {
-                                    width: 100%;
+
+                            >img {
+                                width: 40%;
+                                margin-bottom: 40px;
+                                margin: 0 auto;
+                                @include oneK{
+                                    width: 60%;
                                 }
                             }
                         }
                     }
-                    .btn{
+
+                    .btn {
                         position: absolute;
-                        top: 99%;
-                        right: 10%;
-                        >a {
+                        bottom: 0;
+                        right: 8%;
+                        @include oneK {
+                            bottom: -50px;
+                            right: 10%;
+                        }
+                        .to-site-button {
+                            font-weight: 600;
+                            font-size: 2rem;
                             color: white;
-                            background-color: $whiteOpac;
-                            border-radius: 5px;
-                            padding: 10px 20px;
-                            font-size: 1.5rem;
-                        }
-                        >a:hover{
-                            background-color: white;
-                            color: black;
-                        }
-                    }
-                    .sect:nth-of-type(2){
-                        .image-cluster{
-                            flex-direction: row-reverse;
-                            .couple-img{
-                                margin: 100px 0 40px 40px;
+                            @include pad {
+                                font-size: 1.5rem;
+                            }
+
+                            >img {
+                                width: 35px;
+                                height: 17px;
                             }
                         }
                     }

@@ -1,11 +1,6 @@
-import React, { useState } from 'react';
+
 
 function Skills({ skills }) {
-
-    const [expand, setExpand] = useState(false);
-    function toOtherSkill(){
-        
-    }
 
     return (
         <div className='skills section'>
@@ -31,26 +26,7 @@ function Skills({ skills }) {
                     })
                 }
             </div>
-            <div>
-                <button onClick={()=>{setExpand(!expand)}}>DOWN</button>
-                {expand ? (
-                    <div className='skill-box'>
-                    {
-                        skills.map((obj) => {
-                            return <div className='each-skill' key = {obj.id}>
-                                        <div className='logo-box'>
-                                            <img src={obj.img} alt='' />
-                                        </div>
-                                        <div>
-                                            <span>{obj.name}</span>
-                                            <p>{obj.info}</p>
-                                        </div>
-                                    </div>
-                        })
-                    }
-                </div>
-                ):null}
-            </div>
+            
         </div>
     );
 }

@@ -5,31 +5,20 @@ const names = [
     '열정적인', '협업적인', '개성있는', 'DogFeet'
 ]
 
-// const TEXTS = ['Forest', 'Building', 'Tree', 'Color'];
-
-function Main() {
-    // const [newName, setNewName] = useState("");
-
-    // useEffect(() => {
-    //     let num=0;
-    //     const intervalId = setInterval(()=>{
-    //         setNewName(names[num]);
-    //         num++;
-
-    //     }, 1000);
-
-    //     return () => clearInterval(intervalId);
-    // }, [newName[4]])
+function Main({scrollTo,goToSectionRef}) {
 
     const [index, setIndex] = useState(0);
 
     useEffect(() => {
-        const intervalId = setInterval(
+        let intervalId;
+        if(index !== 4) {
+            intervalId = setInterval(
             () => setIndex((index) => index + 1),
-            3000);
-            // if(index === 4){
-            //     return names[0]
-            // }
+            3000
+            )}
+            if (index === 4){
+                setIndex(0)
+            };
         return () => clearTimeout(intervalId);
     }, [index]);
 
@@ -53,6 +42,7 @@ function Main() {
                     </div>
                 </div>
             </div>
+            <button className='downarrow' onClick={()=>{scrollTo(goToSectionRef)}}><img src="./img/icon/downarrow.png" alt="" /></button>
         </div>
     );
 }

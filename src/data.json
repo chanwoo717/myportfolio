@@ -10,7 +10,7 @@
             "id": 1,
             "img": "./img/icon/css-logo.png",
             "name": "CSS5",
-            "info": "CSS5를 통해 요소가 화면에 어떻게 렌더링되는지에 이해도가 높고 Flexbox와 @media 쿼리를 통해 반응형 사이트를 구축할 수 있습니다."
+            "info": "CSS5 요소/Flexbox가 화면에 어떻게 렌더링되는지에 이해도가 높고 media 쿼리를 통해 반응형 사이트를 구축할 수 있습니다."
         },
         {
             "id": 2,
@@ -52,57 +52,31 @@
             "id": 8,
             "img": "./img/icon/vue-logo.png",
             "name": "VUE.JS",
-            "info": "상상한 무궁무진한 아이디어를 제가 배운 기술로 구현해가는 과정이 재밌습니다."
+            "info": "Data-binding 형식으로 태그 안에 JS 코드를 사용할 수 있고, actions/mutation 등을 사용해 데이터를 불러오는 기능도 사용 가능합니다."
         },
         {
             "id": 9,
             "img": "./img/icon/figma-logo.png",
             "name": "FIGMA",
-            "info": "상상한 무궁무진한 아이디어를 제가 배운 기술로 구현해가는 과정이 재밌습니다."
+            "info": "FIGMA로 웹페이지의 대략적인 디자인 제작 및 기획이 가능합니다."
         },
         {
             "id": 10,
             "img": "./img/icon/notion-logo.png",
             "name": "NOTION",
-            "info": "상상한 무궁무진한 아이디어를 제가 배운 기술로 구현해가는 과정이 재밌습니다."
+            "info": "프로젝트를 진행 하면서 팀원들과 작업 노트 및 디자인 기획을 Notion을 통해 완료했습니다."
         },
         {
             "id": 11,
             "img": "./img/icon/github-skill-logo.png",
             "name": "GITHUB",
-            "info": "상상한 무궁무진한 아이디어를 제가 배운 기술로 구현해가는 과정이 재밌습니다."
-        }
-    ],
-    "skillsTwo": [
-        {
-            "id": 0,
-            "img": "./img/icon/html-logo.png",
-            "name": "MongoDB",
-            "info": "상상한 무궁무진한 아이디어를 제가 배운 기술로 구현해가는 과정이 재밌습니다."
-        },
-        {
-            "id": 1,
-            "img": "./img/icon/css-logo.png",
-            "name": "Firebase",
-            "info": "상상한 무궁무진한 아이디어를 제가 배운 기술로 구현해가는 과정이 재밌습니다."
-        },
-        {
-            "id": 2,
-            "img": "./img/icon/sass-logo.png",
-            "name": "Vercel",
-            "info": "상상한 무궁무진한 아이디어를 제가 배운 기술로 구현해가는 과정이 재밌습니다."
-        },
-        {
-            "id": 3,
-            "img": "./img/icon/js-logo.png",
-            "name": "JSON",
-            "info": "상상한 무궁무진한 아이디어를 제가 배운 기술로 구현해가는 과정이 재밌습니다."
+            "info": "기본적인 push/pull과 브랜치 생성 및 프로젝트 배포로 사용 가능합니다."
         }
     ],
     "contact": [
         {
             "id": 0,
-            "img": "./img/ppTemp.png",
+            "img": "./img/me.png",
             "detail1": "Chan Woo Kim",
             "detail2": "1996/10/10"
         },
@@ -110,186 +84,102 @@
             "id": 1,
             "img": "./img/mapss.png",
             "detail1": "Seoul, Korea",
-            "detail2": "서울시 성동구"
+            "detail2": "서울시 성동구",
+            "url":"https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%EC%84%B1%EB%8F%99%EA%B5%AC/address/14141674.2257162,4517939.0183909,%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EC%84%B1%EB%8F%99%EA%B5%AC,jibun?isCorrectAnswer=true&c=13.00,0,0,0,dh"
         },
         {
             "id": 2,
             "img": "./img/icon/gmail-contact.png",
             "detail1": "chanwoo555sonteen",
-            "detail2": "@gmail.com"
+            "detail2": "@gmail.com",
+            "url":"chanwoo555sonteen@gmail.com"
         },
         {
             "id": 3,
             "img": "./img/icon/github-contact.png",
-            "detail1": "chanwoo717.github.io",
-            "detail2": ""
+            "detail1": "chanwoo717",
+            "detail2": ".github.io",
+            "url":"https://github.com/chanwoo717"
         }
     ],
     "projects": [
         {
             "id": 0,
-            "img": "./img/project1ex.jpg",
-            "name": "Nike (clone-coding)",
-            "url": "./"
+            "img": "./img/nike.png",
+            "name": "Nike Clone-coding"
         },
         {
             "id": 1,
-            "img": "./img/spotlight-bg.jpg",
-            "name": "Seoul City Website",
-            "url": "./"
+            "img": "./img/seoulcity.png",
+            "name": "Seoul City"
         },
         {
             "id": 2,
-            "img": "./img/kook-minion.png",
-            "name": "KookKook",
-            "url": "https://mykook.vercel.app/"
-        },
-        {
-            "id": 3,
-            "img": "./img/spotlight-bg.jpg",
-            "name": "Superman",
-            "url": "./"
+            "img": "./img/food.png",
+            "name": "Kook Kook"
         }
     ],
     "eachContent": {
-        "Nike (clone-coding)": [
+        "Nike Clone-coding": [
             {
                 "id": 1,
-                "banner":"./img/project1ex.jpg",
-                "title": "Nike",
+                "banner":"./img/nike.png",
+                "title": " Nike ",
                 "date": "12.22.2023",
-                "subTitle": "Nike - Clone coding",
-                "content": "이번 클론-코딩 프로젝트의 목적은 사용자들을 위한 UI/UX 측면을 개선하는 것이었습니다. 정해진 나이키 홈페이지의 데스크톱 및 모바일 디자인 모두에 결함이 있었고 아쉬운 점들이 많았으나 최대한 깔끔하게 재개발을 완료했습니다.",
+                "tool":" HTML - Sass - JavaScript - Figma ",
+                "git":"https://github.com/chanwoo717/Nike-clone-coding.git",
+                "subTitle1": " About Nike ",
+                "subTitle2": "Troubleshooting",
+                "content1": "이번 클론-코딩 프로젝트의 목적은 사용자들을 위한 UI/UX 측면을 개선하는것 이였습니다. 정해진 나이키 홈페이지의 데스크톱 및 반응형 디자인에 아쉬운 점들을 최대한 깔끔하게 재개발하는 것이 목표였습니다. Html과 Sass를 사용해 기본 마크업과 UI 디자인을 진행했습니다.",
+                "content2": "여러 이미지를 사용했기 때문에 이미지를 적절하게 그룹화해야 했습니다. 또한 그 이미지들은 웹페이지 전체에 효율적으로 분배되었고, 시각적인 외관을 향상시키기 위해 단어를 최소한으로 사용하여 사용자 경험을 더 원활하게 만들었습니다.",
+                "content4": "KDT 훈련 초반에 실행한 프로젝트라 중심은 마크업 / SASS + Flexbox 측면이였으므로 JS 기능과 데이터는 따로 없는 상태입니다. 이번 첫 프로젝트를 진행하면서 가장 어려운 면이 CSS Flex 활용법이였습니다. Flex의 '규칙' + '원리'는 다른 styling의 효과를 어떻게,언제 받고 안받을 때에 이해하기 어려웠으나 몇번 다루다 보니 매우 간단했었다고 깨달았습니다.",
+                "content5": "게다가, 페이지 디자인과 레이아웃에 대한 저의 지식이 크게 향상되었습니다. 각 HTML 요소가 각자의 방식으로 스타일링되고 구조화된 이유 / 각 이미지,타이틀,버튼 및 글의 배치선정에 대한 이유를 깨달았습니다.",
                 "img": [
-                    "./img/icon/gmail-contact.png",
-                    "./img/icon/css-logo.png",
-                    "./img/icon/html-logo.png"
+                    "./img/nike-info1.png"
                 ],
-                "url":"https://naver.com"
-            },
-            {
-                "id": 2,
-                "subTitle": "About Nike",
-                "content": "제가 가장 좋아하는 영어 격언 입니다.거칠고 빠르게 지나가는 물보다 잔잔하게 오랫동안 깊이 있게 흐르는 물처럼 꾸준히 공부하고,계속 해서 나아갈 자신이 있습니다. 성실하게 쌓은 지식으로, 회사에 실질적인 도움이 되는 프론트엔드 개발자로 일하고 싶습니다.",
-                "img": [
-                    "./img/icon/gmail-contact.png",
-                    "./img/icon/css-logo.png",
-                    "./img/icon/gmail-contact.png"
-                ]
-            },
-            {
-                "id": 3,
-                "subTitle": "About Nike",
-                "content": "제가 가장 좋아하는 영어 격언 입니다.거칠고 빠르게 지나가는 물보다 잔잔하게 오랫동안 깊이 있게 흐르는 물처럼 꾸준히 공부하고,계속 해서 나아갈 자신이 있습니다. 성실하게 쌓은 지식으로, 회사에 실질적인 도움이 되는 프론트엔드 개발자로 일하고 싶습니다.",
-                "img": [
-                    "./img/icon/css-logo.png",
-                    "./img/icon/gmail-contact.png"
-                ]
+                "url":"https://nikeclone-alpha.vercel.app/"
             }
         ],
-        "Seoul City Website": [
+        "Seoul City": [
             {
                 "id": 1,
-                "banner":"./",
+                "banner":"./img/seoulcity.png",
                 "title": "Seoul City Website",
                 "date": "02.01.2024",
-                "subTitle": "About Seoul City Website",
-                "content": "제가 가장 좋아하는 영어 격언 입니다.거칠고 빠르게 지나가는 물보다 잔잔하게 오랫동안 깊이 있게 흐르는 물처럼 꾸준히 공부하고,계속 해서 나아갈 자신이 있습니다. 성실하게 쌓은 지식으로, 회사에 실질적인 도움이 되는 프론트엔드 개발자로 일하고 싶습니다.",
+                "tool":" HTML - Sass - JavaScript - Github - Notion - Figma ",
+                "git":"https://github.com/dragon1431/teamA_hit.git",
+                "subTitle1": " About Seoul City Website ",
+                "subTitle2": " Troubleshooting ",
+                "content1": "서울시 웹사이트 프로젝트를 개발하는 과정은 나이키 프로젝트와 같이 clone-coding이였으므로 유사했습니다. 서울 시청은 대한민국을 대표하는 수도의 공식 사이트임에도 불구하고다른 지역의 청사 사이트에 비해 디자인 및 기능적으로 상당히 노후화 되어있습니다. ",
+                "content2": "이에 따라 저희 팀은 메인 페이지에 불필요한 정보들을 제거하고 이미지와 애니메이션 효과를 통해  유입자들의 흥미를 유발하고 정보 제공은 서브 페이지를 통해 하자는 목표를 가지고을 타겟으로 정하여 텍스트를 줄이고 이미지 위주의 심플하고 현대적인 디자인과 UI로 개선하고자 했습니다.",
+                "content4": "프로젝트 진행 과정에서 팀원들 모두 각자 다른 문제에 부딪히곤 했습니다. 팀 프로젝트가 생소한 인원들끼리 계획을 짜다 보니 초기 진로 설정에 많은 시간이 소모되었으며, 결국 계획이 크게 뒤바뀌어 디자인 위주로 방향성이 변경되면서 프로젝트 초기에 디자이너에게 업무 비중이 과도하게 몰린 경향이 있었습니다.",
+                "content5": "추가적으로 통일성을 유지하는 것이 상당히 어려웠습니다. 각자 해왔던 코딩 스타일이 다르다 보니 여백은 어떻게 할지, 마크업 구성은 어떻게 할지 논의 해야 할 일이 많았습니다. 그리고 외부 스크립트를 사용하면서 명령어들이 상당히 생소했으며, 기존에 배웠던 JS 명령어 대신 외부 스크립트에서 지정해 둔 명령어를 익혀야 하는 문제점 때문에 상당히 오랜 시간을 투자하여야 했습니다.",
+                "content6": "이번 프로젝트를 진행하면서 다양한 문제를 마주했지만 그 중에서도 가장 큰 장벽은 Git이었다고 말할 수 있을 것 같습니다. Git은 팀 프로젝트 관리를 위해 필수불가결한 Application임은 인정하지만 사용 방식이 익숙하지 않아 Git을 다루는 과정에서 상당히 많은 문제가 발생했습니다. 대표적으로 Merge의 사용 방식을 이해하는 데에 긴 시간이 필요했고 Local Server와 Live Server 간 경로 차이에 대한 이해도 부족했습니다. 그러나 이번 경험을 통해 실무에서 어떻게 Git을 대해야 하는지 확실히 배울 수 있었습니다.",
                 "img": [
-                    "./img/icon/gmail-contact.png",
-                    "./img/icon/css-logo.png",
-                    "./img/icon/html-logo.png"
+                    "./img/seoul.png"
                 ],
-                "url":"https://naver.com"
-            },
-            {
-                "id": 2,
-                "subTitle": "About Seoul City Website",
-                "content": "제가 가장 좋아하는 영어 격언 입니다.거칠고 빠르게 지나가는 물보다 잔잔하게 오랫동안 깊이 있게 흐르는 물처럼 꾸준히 공부하고,계속 해서 나아갈 자신이 있습니다. 성실하게 쌓은 지식으로, 회사에 실질적인 도움이 되는 프론트엔드 개발자로 일하고 싶습니다.",
-                "img": [
-                    "./img/icon/gmail-contact.png",
-                    "./img/icon/css-logo.png",
-                    "./img/icon/gmail-contact.png"
-                ]
-            },
-            {
-                "id": 3,
-                "subTitle": "About Seoul City Website",
-                "content": "제가 가장 좋아하는 영어 격언 입니다.거칠고 빠르게 지나가는 물보다 잔잔하게 오랫동안 깊이 있게 흐르는 물처럼 꾸준히 공부하고,계속 해서 나아갈 자신이 있습니다. 성실하게 쌓은 지식으로, 회사에 실질적인 도움이 되는 프론트엔드 개발자로 일하고 싶습니다.",
-                "img": [
-                    "./img/icon/css-logo.png",
-                    "./img/icon/gmail-contact.png"
-                ]
+                "url":"https://seoulcity.vercel.app/"
             }
         ],
-        "KookKook": [
+        "Kook Kook": [
             {
                 "id": 1,
-                "banner":"./",
-                "title": "KookKook",
-                "date": "03.02.2024",
-                "subTitle": "About KookKook",
-                "content": "제가 가장 좋아하는 영어 격언 입니다.거칠고 빠르게 지나가는 물보다 잔잔하게 오랫동안 깊이 있게 흐르는 물처럼 꾸준히 공부하고,계속 해서 나아갈 자신이 있습니다. 성실하게 쌓은 지식으로, 회사에 실질적인 도움이 되는 프론트엔드 개발자로 일하고 싶습니다.",
+                "banner":"./img/food.png",
+                "title": "Kook Kook",
+                "date": "03.21.2024",
+                "tool":" NextJS - TypeScript - Axios - Sass - MongoDB - Firebase - Github - Figma ",
+                "git":"https://github.com/chanwoo717/mykook.git",
+                "subTitle1": "About Kook Kook",
+                "subTitle2": "Troubleshooting",
+                "content1": "API를 통해 데이터를 불러오고 사용해서 간편한 모바일 앱을 NextJS과 TypeScript를 적용해 생성하는 팀 프로젝트를 진행했습니다.",
+                "content2": "우리 팀은 MZ 세대인 우리 대상 소비자를 기반으로 한 레시피 앱에 대한 결정을 내렸습니다. 젊은 학생들이나 직장인들의 상당 부분이 배달 앱을 통해 음식을 주문하거나 간단한 조리를 합니다. 저희 아이디어는 손쉽게 이용하고 접근하기 편한 앱을 개발 하는것 이였습니다.",
+                "content3": "구글 및 네이버 로그인 API를 통해 첫 페이지를 구현하고, 로그인 및 비회원 로그인후 다양한 콘텐츠를 접근 할 수 있게 기확을 했습니다. MongoDB를 이용해 500+ 개의 레시피를 여러 카테고리로 분배하고 좋아요 및 북마크 기능도 추가하여, 선택 한 레시피를 마이페이지에서 더욱 더 쉽게 접근 할 수 있게 만들었습니다. 또한 검색 기능과 자신 레시피도 추가가 가능한 앱으로 완성화 되었습니다.",
+                "content4": "API를 다루는 것에 첫 번째 어려움을 겪었습니다. API의 사용 방법과 코드 내에서 어떻게 구조화될 지에 대한 지식이 거의 없었습니다 (next-auth/session). 철저한 연구를 통해 로그인/로그아웃 기능이 제공되었있다는 것을 알게 되었습니다. 주어진 코딩 구조를 우리의 코딩 내에 정확히 배치하는 것만 필요했습니다. 그것을 알아낸 후에는 남은 작업들이 쉽게 완료되었습니다.",
+                "content5": "두 번째는 MongoDB 서버에 여러 문제가 발생해서 많은 시간이 소모되었습니다. MongoDB 서버에서 불러오는 데이터가 상당히 많아서, timeout 문제로 인해 데이터 출력 시간이 너무 길어 출력된 데이터를 limit을 걸어서 수정했습니다. 또한 MongoDB에 이미지를 저장하는 부분에서도 문제가 있었는데 그를 해결 하기 위해 Firebase를 사용했습니다.",
                 "img": [
-                    "./img/icon/gmail-contact.png",
-                    "./img/icon/css-logo.png",
-                    "./img/icon/html-logo.png"
+                    "./img/kookkook.png"
                 ],
-                "url":"https://naver.com"
-            },
-            {
-                "id": 2,
-                "subTitle": "About KookKook",
-                "content": "제가 가장 좋아하는 영어 격언 입니다.거칠고 빠르게 지나가는 물보다 잔잔하게 오랫동안 깊이 있게 흐르는 물처럼 꾸준히 공부하고,계속 해서 나아갈 자신이 있습니다. 성실하게 쌓은 지식으로, 회사에 실질적인 도움이 되는 프론트엔드 개발자로 일하고 싶습니다.",
-                "img": [
-                    "./img/icon/gmail-contact.png",
-                    "./img/icon/css-logo.png",
-                    "./img/icon/gmail-contact.png"
-                ]
-            },
-            {
-                "id": 3,
-                "subTitle": "About KookKook",
-                "content": "제가 가장 좋아하는 영어 격언 입니다.거칠고 빠르게 지나가는 물보다 잔잔하게 오랫동안 깊이 있게 흐르는 물처럼 꾸준히 공부하고,계속 해서 나아갈 자신이 있습니다. 성실하게 쌓은 지식으로, 회사에 실질적인 도움이 되는 프론트엔드 개발자로 일하고 싶습니다.",
-                "img": [
-                    "./img/icon/css-logo.png",
-                    "./img/icon/gmail-contact.png"
-                ]
-            }
-        ],
-        "Superman": [
-            {
-                "id": 1,
-                "banner":"./",
-                "title": "Superman",
-                "date": "03.02.2024",
-                "subTitle": "About Titleman",
-                "content": "제가 가장 좋아하는 영어 격언 입니다.거칠고 빠르게 지나가는 물보다 잔잔하게 오랫동안 깊이 있게 흐르는 물처럼 꾸준히 공부하고,계속 해서 나아갈 자신이 있습니다. 성실하게 쌓은 지식으로, 회사에 실질적인 도움이 되는 프론트엔드 개발자로 일하고 싶습니다.",
-                "img": [
-                    "./img/icon/gmail-contact.png",
-                    "./img/icon/css-logo.png",
-                    "./img/icon/html-logo.png"
-                ],
-                "url":"https://naver.com"
-            },
-            {
-                "id": 2,
-                "subTitle": "About Titleman",
-                "content": "제가 가장 좋아하는 영어 격언 입니다.거칠고 빠르게 지나가는 물보다 잔잔하게 오랫동안 깊이 있게 흐르는 물처럼 꾸준히 공부하고,계속 해서 나아갈 자신이 있습니다. 성실하게 쌓은 지식으로, 회사에 실질적인 도움이 되는 프론트엔드 개발자로 일하고 싶습니다.",
-                "img": [
-                    "./img/icon/gmail-contact.png",
-                    "./img/icon/css-logo.png",
-                    "./img/icon/gmail-contact.png"
-                ]
-            },
-            {
-                "id": 3,
-                "subTitle": "About Titleman",
-                "content": "제가 가장 좋아하는 영어 격언 입니다.거칠고 빠르게 지나가는 물보다 잔잔하게 오랫동안 깊이 있게 흐르는 물처럼 꾸준히 공부하고,계속 해서 나아갈 자신이 있습니다. 성실하게 쌓은 지식으로, 회사에 실질적인 도움이 되는 프론트엔드 개발자로 일하고 싶습니다.",
-                "img": [
-                    "./img/icon/css-logo.png",
-                    "./img/icon/gmail-contact.png"
-                ]
+                "url":"https://mykook.vercel.app/"
             }
         ]
     }

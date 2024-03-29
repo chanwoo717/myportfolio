@@ -1,0 +1,28 @@
+$mobile: 540px;
+$pad: 768px;
+$oneK: 1024px;
+
+@mixin mobile {
+    @media(max-width:$mobile) {
+        @content;
+    }
+}
+
+@mixin pad {
+    @media(max-width:$pad) {
+        @content;
+    }
+}
+
+@mixin oneK {
+    @media(max-width:$oneK) {
+        @content;
+    }
+}
+
+@mixin absolPos {
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
