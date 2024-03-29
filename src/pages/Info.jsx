@@ -37,7 +37,7 @@ function Info({ eachProj }) {
                                 <p>{obj.content6}</p>
                             </div>
                             <div className='project-descript descript-center'>
-                                <Link to ={obj.git} className='to-site-button'><h4 className='info-title gitty'>See Github <img src="./img/icon/github-a.png" alt="" /></h4></Link>
+                                <Link to ={obj.git} className='to-site-button' target="blank" ><h4 className='info-title gitty'>See Github <img src="./img/icon/github-a.png" alt="" /></h4></Link>
                             </div>
                             <div className='image-cluster' >
                                 <img src={obj.img[0]} alt='' />
@@ -45,7 +45,7 @@ function Info({ eachProj }) {
                         </section>
                         {!k &&
                             <div className='btn'>
-                                <Link to={obj.url} className='to-site-button'> Go To Website <img src="./img/icon/right-arrow.png" alt="" /></Link>
+                                <Link to={obj.url} className='to-site-button' target="blank" > Go To Website <img src="./img/icon/right-arrow.png" alt="" /></Link>
                             </div>
                         }
                     </div>

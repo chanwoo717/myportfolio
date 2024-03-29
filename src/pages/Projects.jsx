@@ -15,7 +15,6 @@ const [projIdx,setprojIdx] = useState(0);
 console.log(project.length);
     return (
         <div className='project'>
-            {/* <img src = {project[projIdx].img} alt = '' /> */}
             <div className='project-main'>
                 
                 <Swiper
@@ -33,7 +32,6 @@ console.log(project.length);
                     }
                     className="mySwiper"
                 >
-                    {/* <h2>Projects</h2> */}
                     {project.map((obj)=>{
                     return <SwiperSlide key = {obj.id}>
                         <div className='each-slide'>
@@ -41,7 +39,6 @@ console.log(project.length);
                             <p>{obj.name}</p>
                             <div className="project-button">
                                 <Link to = "/projects/info" state={obj.name} className='to-info-button'> View more <img src="./img/icon/right-arrow.png" alt=""/></Link>
-                                {/* <Link to = {obj.url} className='to-site-button'>Go To Website</Link> */}
                             </div>
                             <div className='length'>{obj.id +1}/{project.length}</div>
                         </div>

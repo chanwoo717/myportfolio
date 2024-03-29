@@ -14,7 +14,7 @@ function Contact({contact}) {
                     {
                         contact.map((obj)=>{
                             return <figure key = {obj.id}>
-                                        <Link to={obj.url}><img src = {obj.img} alt = '' /></Link>
+                                        <Link to={obj.url} target="blank" ><img src = {obj.img} alt = '' /></Link>
                                         <figcaption>
                                             <p>{obj.detail1} <br/> {obj.detail2}</p>
                                         </figcaption>
