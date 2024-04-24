@@ -117,6 +117,11 @@
             "id": 2,
             "img": "./img/food.png",
             "name": "Kook Kook"
+        },
+        {
+            "id": 3,
+            "img": "./img/daily.jpg",
+            "name": "Daily-app"
         }
     ],
     "eachContent": {
@@ -180,6 +185,27 @@
                     "./img/kookkook.png"
                 ],
                 "url":"https://mykook.vercel.app/"
+            }
+        ],
+        "Daily-app": [
+            {
+                "id": 1,
+                "banner":"./img/daily.jpg",
+                "title": "Daily app",
+                "date": "04.21.2024",
+                "tool":" VueJS - Axios - Css - Github - Figma ",
+                "git":"https://github.com/chanwoo717/task-app",
+                "subTitle1": "About Daily-app",
+                "subTitle2": "Troubleshooting",
+                "content1": "이번 프로젝트는 Vue.JS로 개발한 개인 프로젝트입니다. 하루 일정을 한 애플리케이션에서 접근할 수 있게 기획을 했습니다.",
+                "content2": "Daily-app은 현재 또는 선택한 국가의 날씨를 확인할 수 있는 기능뿐만 아니라, 개인 일정을 관리할 수 있는 To-Do 목록, 간단한 수학 문제를 해결할 수 있는 계산기, 그리고 현재 위치 또는 새로운 위치를 검색할 수 있는 구글 지도 기능들을 포함하고 있습니다.",
+                "content3": "",
+                "content4": "다양한 종류의 언어들을 경험 하다보니 Vue.js의 개념을 파악하는 것이 더 쉬웠습니다. 그러나 'props', 'data', 'functions' 및 기타 속성들을 선언할 때에 이어서 비슷하면서 다르게 발생한 에러들을 조치할 때에 혼란스러운 순간들이 있었습니다.",
+                "content5": "또한, 이번 프로젝트는 개인 프로젝트였기 때문에 프로젝트 디자인 측면에서 생동감을 부여하는 것이 어려웠습니다.",
+                "img": [
+                    "./img/daily-app.png"
+                ],
+                "url":"https://daily-app-ruby.vercel.app/#/"
             }
         ]
     }
